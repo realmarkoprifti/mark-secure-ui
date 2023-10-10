@@ -1,4 +1,4 @@
-const API = "http://127.0.0.1:8000/api";
+const API = "https://marksecure.onrender.com/api";
 
 interface CheckRoomProps {
   room_id: string;
