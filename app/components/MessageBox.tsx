@@ -25,7 +25,7 @@ const MessageBox = ({ room_id }: MessageBoxProps) => {
   const searchParams = useSearchParams();
   const [chattingWith, setChattingWith] = useState(true);
   const { lastMessage, sendMessage, readyState } = useWebSocket(
-    `ws:/marksecure.onrender.com/ws/chat/${room_id}/${searchParams.get("password")}`
+    `wss:/marksecure.onrender.com/ws/chat/${room_id}/${searchParams.get("password")}`
   );
 
   useEffect(() => {
